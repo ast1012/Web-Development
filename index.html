@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Texagic</title>
+    </head>
+  <body>
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+  <img src="static/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">
+  TEXAGIC.in</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+    </form>
+  </div>
+</nav>
+
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+  <strong>Welcome to TextEditor!</strong> You do magic with your text here.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<img src="static/texagic.png" class="img-fluid" style="width:15800px;height:350px;">
+
+<br>
+<br>
+
+<div class="container">
+    <form action='/analyze' method='get'>
+    
+   <div class="form-group">
+   <label for="exampleFormControlTextarea1"><h3>
+     Enter Your Text Here
+  <small class="text-muted">:-</small>
+</h3></label>
+    <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="3" style="margin-top: 0px; margin-bottom: 0px; height: 307px;">
+    </textarea>
+  </div>
+
+<div class="form-check">
+  <input class="form-check-input" name="removepunc" type="checkbox" id="defaultCheck1">
+      <button type="button" name="removepunc" class="btn btn-outline-primary">Remove Puntutation</button>
+  <label class="form-check-label" for="defaultCheck1">    
+  </label>
+</div>
+<br>
+<div class="form-check">
+  <input class="form-check-input" name="spaces" type="checkbox" id="defaultCheck1">
+   <button type="button" name="spaces" class="btn btn-outline-danger">Remove Spaces</button>
+  <label class="form-check-label" for="defaultCheck1">   
+  </label>
+</div>
+<br>
+<div class="form-check">
+  <input class="form-check-input" name="capitals" type="checkbox" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    <button type="button" name="capitals" class="btn btn-outline-success">Capitalize</button>
+  </label>
+</div>
+<br>
+<div class="form-check">
+  <input class="form-check-input" name="counts" type="checkbox" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    <button type="button" name="counts" class="btn btn-outline-warning">Count of Characters</button>
+  </label>
+<br>
+<div class="d-grid gap-2 col-1 mx-auto">
+  <button type="submit" class="btn btn-dark" type="button">Analyze Your Text</button>
+</div>
+</form>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
